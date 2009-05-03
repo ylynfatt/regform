@@ -53,3 +53,15 @@ td {
 	border: 1px solid #ccc;
 	padding: 5px;
 }
+
+span.required {
+    color: red;
+    font-weight: bold;
+}
+div.error {
+    border: 1px solid #EACBCC;
+    background-color: #FFDFDF;
+    padding: 5px;
+    margin: 5px 0;
+    font-weight: bold;
+}

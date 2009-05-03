@@ -10,13 +10,13 @@
 <h1>Registration Form</h1>
 <p>Please complete the following form:</p>
 
-<?php echo $this->validation->error_string; ?>
+<?php echo validation_errors(); ?>
 
 <?php echo form_open('form/index'); ?>
-<p><label for="fname">Full Name: </label><br /><?php echo form_input($fname); ?></p>
-<p><label for="email">E-mail: </label><br /><?php echo form_input($email); ?></p>
+<p><label for="fname">Full Name: <span class="required">*</span></label><br /><?php echo form_input($fname); ?></p>
+<p><label for="email">E-mail: <span class="required">*</span></label><br /><?php echo form_input($email); ?></p>
 
-<p>Please select one or more seminars, that you would like to attend</p>
+<p>Please select one or more seminars, that you would like to attend: <span class="required">*</span></p>
 <p><?php echo form_checkbox($purpose); ?> <label for="purpose">Purpose of Prayer</label></p>
 <p><?php echo form_checkbox($prepare); ?> <label for="prepare">Prepare for Prayer</label></p>
 <p><?php echo form_checkbox($principles); ?> <label for="principles">Principles of Prayer</label></p>
