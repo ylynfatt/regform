@@ -24,11 +24,11 @@
 
 <!-- START NAVIGATION -->
 <div id="nav"><div id="nav_inner"><script type="text/javascript">create_menu('../');</script></div></div>
-<div id="nav2"><a name="top"></a><a href="javascript:void(0);" onclick="myHeight.toggle();"><img src="../images/nav_toggle.jpg" width="153" height="44" border="0" title="Toggle Table of Contents" alt="Toggle Table of Contents" /></a></div>
+<div id="nav2"><a name="top"></a><a href="javascript:void(0);" onclick="myHeight.toggle();"><img src="../images/nav_toggle_darker.jpg" width="154" height="43" border="0" title="Toggle Table of Contents" alt="Toggle Table of Contents" /></a></div>
 <div id="masthead">
 <table cellpadding="0" cellspacing="0" border="0" style="width:100%">
 <tr>
-<td><h1>CodeIgniter User Guide Version 1.6.3</h1></td>
+<td><h1>CodeIgniter User Guide Version 1.7.1</h1></td>
 <td id="breadcrumb_right"><a href="../toc.html">Table of Contents Page</a></td>
 </tr>
 </table>
@@ -80,6 +80,16 @@ available globally in that class.</p>
 <p class="important">If the above function does <strong>not</strong> contain any information in the first parameter it will connect
 to the group specified in your database config file. For most people, this is the preferred method of use.</p>
 
+<h3>Available Parameters</h3>
+
+<ol>
+	<li>The database connection values, passed either as an array or a DSN string.</li>
+	<li>TRUE/FALSE (boolean).  Whether to return the connection ID (see Connecting to Multiple Databases below).</li>
+	<li>TRUE/FALSE (boolean).  Whether to enable the Active Record class.  Set to TRUE by default.</li>
+</ol>
+
+
+<h3>Manually Connecting to a Database</h3>
 
 <p>The first parameter of this function can <strong>optionally</strong> be used to specify a particular database group
 from your config file, or you can even submit connection values for a database that is not specified in your config file.

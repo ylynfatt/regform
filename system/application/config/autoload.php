@@ -1,4 +1,4 @@
-<?php  if (!defined('BASEPATH')) exit('No direct script access allowed');
+<?php  if ( ! defined('BASEPATH')) exit('No direct script access allowed');
 /*
 | -------------------------------------------------------------------
 | AUTO-LOADER
@@ -23,6 +23,7 @@
 | 3. Plugins
 | 4. Custom config files
 | 5. Language files
+| 6. Models
 |
 */
 
@@ -51,19 +52,6 @@ $autoload['libraries'] = array('email');
 */
 
 $autoload['helper'] = array('url', 'form');
-
-
-/*
-| -------------------------------------------------------------------
-|  Auto-load Model files
-| -------------------------------------------------------------------
-| Prototype:
-|
-|    $autoload['model'] = array('my_model');
-|
-*/
-
-$autoload['model'] = array();
 
 
 /*
@@ -109,15 +97,20 @@ $autoload['config'] = array();
 
 $autoload['language'] = array();
 
+
 /*
 | -------------------------------------------------------------------
-|  Auto-load Core Libraries
+|  Auto-load Models
 | -------------------------------------------------------------------
+| Prototype:
 |
-| DEPRECATED:  Use $autoload['libraries'] above instead.
+|	$autoload['model'] = array('model1', 'model2');
 |
 */
-// $autoload['core'] = array();
+
+$autoload['model'] = array();
 
 
-?>
+
+/* End of file autoload.php */
+/* Location: ./system/application/config/autoload.php */

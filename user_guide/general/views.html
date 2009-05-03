@@ -24,11 +24,11 @@
 
 <!-- START NAVIGATION -->
 <div id="nav"><div id="nav_inner"><script type="text/javascript">create_menu('../');</script></div></div>
-<div id="nav2"><a name="top"></a><a href="javascript:void(0);" onclick="myHeight.toggle();"><img src="../images/nav_toggle.jpg" width="153" height="44" border="0" title="Toggle Table of Contents" alt="Toggle Table of Contents" /></a></div>
+<div id="nav2"><a name="top"></a><a href="javascript:void(0);" onclick="myHeight.toggle();"><img src="../images/nav_toggle_darker.jpg" width="154" height="43" border="0" title="Toggle Table of Contents" alt="Toggle Table of Contents" /></a></div>
 <div id="masthead">
 <table cellpadding="0" cellspacing="0" border="0" style="width:100%">
 <tr>
-<td><h1>CodeIgniter User Guide Version 1.6.3</h1></td>
+<td><h1>CodeIgniter User Guide Version 1.7.1</h1></td>
 <td id="breadcrumb_right"><a href="../toc.html">Table of Contents Page</a></td>
 </tr>
 </table>
@@ -90,14 +90,14 @@ you should do so before continuing.</p>
 
 <code>$this->load->view('<var>name</var>');</code>
 
-<p>Where <var>name</var> is the name of your view file.  Note: The .php file extension does not need to be specified unless you use something other then <kbd>.php</kbd>.</p>
+<p>Where <var>name</var> is the name of your view file.  Note: The .php file extension does not need to be specified unless you use something other than <kbd>.php</kbd>.</p>
 
 
 <p>Now, open the controller file you made earlier called <dfn>blog.php</dfn>, and replace the echo statement with the view loading function:</p>
 
 
 <textarea class="textarea" style="width:100%" cols="50" rows="10">
-<?php
+&lt;?php
 class Blog extends Controller {
 
 	function index()
@@ -105,7 +105,7 @@ class Blog extends Controller {
 		$this->load->view('blogview');
 	}
 }
-?>
+?&gt;
 </textarea>
 
 
@@ -129,7 +129,7 @@ class Page extends Controller {<br /><br />
 &nbsp;&nbsp;&nbsp;}<br />
 <br />
 }<br />
-    ?&gt;</code></p>
+	?&gt;</code></p>
 <p>In the example above, we are using &quot;dynamically added data&quot;, which you will see below.</p>
 <h2>Storing Views within Sub-folders</h2>
 <p>Your view files can also be stored within sub-folders if you prefer that type of organization.  When doing so you will need
@@ -246,6 +246,14 @@ class Blog extends Controller {
 <p><strong>Note:</strong> You'll notice that in the example above we are using PHP's alternative syntax.  If you
 are not familiar with it you can read about it <a href="alternative_php.html">here</a>.</p>
 
+<h2>Returning views as data</h2>
+
+<p>There is a third <strong>optional</strong> parameter lets you change the behavior of the function so that it returns data as a string
+rather than sending it to your browser.  This can be useful if you want to process the data in some way.  If you
+set the parameter to <kbd>true</kbd> (boolean) it will return data.  The default behavior is <kbd>false</kbd>, which sends it
+to your browser.  Remember to assign it to a variable if you want the data returned:</p>
+
+<code>$string = $this->load->view('<var>myfile</var>', '', <kbd>true</kbd>);</code>
 
 </div>
 <!-- END CONTENT -->
@@ -253,7 +261,7 @@ are not familiar with it you can read about it <a href="alternative_php.html">he
 
 <div id="footer">
 <p>
-Previous Topic:&nbsp;&nbsp;<a href="controllers.html">Controllers</a>
+Previous Topic:&nbsp;&nbsp;<a href="reserved_names.html">Reserved Names</a>
 &nbsp;&nbsp;&nbsp;&middot;&nbsp;&nbsp;
 <a href="#top">Top of Page</a>&nbsp;&nbsp;&nbsp;&middot;&nbsp;&nbsp;
 <a href="../index.html">User Guide Home</a>&nbsp;&nbsp;&nbsp;&middot;&nbsp;&nbsp;

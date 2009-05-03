@@ -23,11 +23,11 @@
 
 <!-- START NAVIGATION -->
 <div id="nav"><div id="nav_inner"><script type="text/javascript">create_menu('../');</script></div></div>
-<div id="nav2"><a name="top"></a><a href="javascript:void(0);" onclick="myHeight.toggle();"><img src="../images/nav_toggle.jpg" width="153" height="44" border="0" title="Toggle Table of Contents" alt="Toggle Table of Contents" /></a></div>
+<div id="nav2"><a name="top"></a><a href="javascript:void(0);" onclick="myHeight.toggle();"><img src="../images/nav_toggle_darker.jpg" width="154" height="43" border="0" title="Toggle Table of Contents" alt="Toggle Table of Contents" /></a></div>
 <div id="masthead">
 <table cellpadding="0" cellspacing="0" border="0" style="width:100%">
 <tr>
-<td><h1>CodeIgniter User Guide Version 1.6.3</h1></td>
+<td><h1>CodeIgniter User Guide Version 1.7.1</h1></td>
 <td id="breadcrumb_right"><a href="../toc.html">Table of Contents Page</a></td>
 </tr>
 </table>
@@ -240,7 +240,7 @@ $this->validation->set_rules($rules);</code>
 
 <p>Your controller should now look like this:</p>
 
-<textarea class="textarea" style="width:100%" cols="50" rows="28"><?php
+<textarea class="textarea" style="width:100%" cols="50" rows="28">&lt;?php
 
 class Form extends Controller {
 	
@@ -340,7 +340,7 @@ create a callback function that does that.  Let's create a simple example.</p>
 <p>Then add a new function called <dfn>username_check</dfn> to your controller.  Here's how your controller should look:</p>
 
 
-<textarea class="textarea" style="width:100%" cols="50" rows="44"><?php
+<textarea class="textarea" style="width:100%" cols="50" rows="44">&lt;?php
 
 class Form extends Controller {
 	
@@ -577,10 +577,10 @@ For example, your "username" error will be available at:<br /><dfn>$this->valida
 <td class="td">&nbsp;</td>
 </tr>
 <tr>
-    <td class="td"><strong>numeric</strong></td>
-    <td class="td">No</td>
-    <td class="td">Returns FALSE if the form element contains anything other than numeric characters.</td>
-    <td class="td">&nbsp;</td>
+	<td class="td"><strong>numeric</strong></td>
+	<td class="td">No</td>
+	<td class="td">Returns FALSE if the form element contains anything other than numeric characters.</td>
+	<td class="td">&nbsp;</td>
 </tr>
 <tr>
 
@@ -608,10 +608,10 @@ For example, your "username" error will be available at:<br /><dfn>$this->valida
 <td class="td">&nbsp;</td>
 </tr>
 <tr>
-    <td class="td"><strong>valid_base64</strong></td>
-    <td class="td">No</td>
-    <td class="td">Returns FALSE if the supplied string contains anything other than valid Base64 characters.</td>
-    <td class="td">&nbsp;</td>
+	<td class="td"><strong>valid_base64</strong></td>
+	<td class="td">No</td>
+	<td class="td">Returns FALSE if the supplied string contains anything other than valid Base64 characters.</td>
+	<td class="td">&nbsp;</td>
 </tr>
 </table>
 

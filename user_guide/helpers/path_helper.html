@@ -23,11 +23,11 @@
 
 <!-- START NAVIGATION -->
 <div id="nav"><div id="nav_inner"><script type="text/javascript">create_menu('../');</script></div></div>
-<div id="nav2"><a name="top"></a><a href="javascript:void(0);" onclick="myHeight.toggle();"><img src="../images/nav_toggle.jpg" width="153" height="44" border="0" title="Toggle Table of Contents" alt="Toggle Table of Contents" /></a></div>
+<div id="nav2"><a name="top"></a><a href="javascript:void(0);" onclick="myHeight.toggle();"><img src="../images/nav_toggle_darker.jpg" width="154" height="43" border="0" title="Toggle Table of Contents" alt="Toggle Table of Contents" /></a></div>
 <div id="masthead">
 <table cellpadding="0" cellspacing="0" border="0" style="width:100%">
 <tr>
-<td><h1>CodeIgniter User Guide Version 1.6.3</h1></td>
+<td><h1>CodeIgniter User Guide Version 1.7.1</h1></td>
 <td id="breadcrumb_right"><a href="../toc.html">Table of Contents Page</a></td>
 </tr>
 </table>
@@ -72,16 +72,20 @@ Path Helper
 
 <p>Checks to see if the path exists. This function will return a server path without symbolic links or relative directory structures. An optional second argument will cause an error to be triggered if the path cannot be resolved.</p>
 
-<code>$directory = './../../etc/passwd';<br />
-echo set_realpath($directory);<br />
+<code>$directory = '/etc/passwd';<br />
+echo set_realpath($directory);<br />
 // returns &quot;/etc/passwd&quot;<br />
 <br />
-$non_existent_directory = './../../path/not/found';<br />
-echo set_realpath($non_existent_directory, TRUE);<br />
-// returns &quot;/path/not/found&quot;<br />
-<br />
-echo set_realpath($non_existent_directory, FALSE);<br />
-// returns an <strong>error</strong>, as the path could not be resolved</code>
+$non_existent_directory = '/path/to/nowhere';<br />
+echo set_realpath($non_existent_directory, TRUE);<br />
+// returns an <strong>error</strong>, as the path could not be resolved
+<br /><br />
+echo set_realpath($non_existent_directory, FALSE);<br />
+// returns &quot;/path/to/nowhere&quot;
+
+
+
+</code>
 <h2>&nbsp;</h2>
 </div>
 <!-- END CONTENT -->
