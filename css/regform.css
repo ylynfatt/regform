@@ -1,0 +1,55 @@
+/**
+ * Regform CSS
+ * Introduction to Code Igniter Tutorial
+ *
+ * @author 		Yannick Lyn Fatt
+ * @e-mail 		yannick@godsporch.net
+ * @url			http://www.godsporch.net
+ * @version		1.0
+ *
+ * Verse: Proverbs 9:10-12
+ * The fear of the Lord is the beginning of wisdom,
+ * and knowledge of the Holy One is understanding.
+ * For through me your days will be many,
+ * and years will be added to your life.
+ * If you are wise, your wisdom will reward you;
+ * if you are a mocker, you alone will suffer.
+ *
+ */
+
+body {
+ margin: 0;
+ padding: 0;
+ border-top: 5px solid #ccc;
+ text-align: center;
+ font: small/1.4em Arial, Helvetica, sans-serif;	
+}
+
+#container {
+	width: 800px;
+	margin: 0 auto;
+	text-align: left;
+}
+
+h1 {
+	font: normal 150% Georgia, "Times New Roman", serif;
+	letter-spacing: 1px;
+}
+
+table {
+	border: 1px solid #ccc;
+	border-collapse: collapse;
+}
+
+th {
+	border-width: 0 1px 1px 0;
+	border: 1px solid #ccc;
+	text-align: left;
+	padding: 5px;
+}
+
+td {
+	border-width: 0 1px 1px 0;
+	border: 1px solid #ccc;
+	padding: 5px;
+}
